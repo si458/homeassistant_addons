@@ -10,7 +10,7 @@ RUN \
     py3-pillow \
     py3-smbus
 
-RUN git clone -b fix-textsize-deprecated --single-branch --depth 1 https://github.com/si458/rpi_i2c_oled.git /I2C_OLED
+RUN git clone -b fix-textsize-scroller --single-branch --depth 1 https://github.com/si458/rpi_i2c_oled.git /I2C_OLED
 
 COPY run.sh /
 WORKDIR /data
